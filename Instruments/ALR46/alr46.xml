@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!-- AN/ALR-46 Controls and Display, by Dave Culp -->
+
+<PropertyList>
+
+ <path>alr46.ac</path>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>50</max-m>
+ </animation>
+
+</PropertyList>

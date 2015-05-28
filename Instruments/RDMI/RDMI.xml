@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+
+<!-- RDMI, with TACAN needle, by Dave Culp -->
+
+<PropertyList>
+
+ <path>RDMI.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>TACANneedle</object-name>
+  <object-name>VORneedle</object-name>
+  <object-name>pointer</object-name>
+  <object-name>tacan-hundreds</object-name>
+  <object-name>tacan-tens</object-name>
+  <object-name>tacan-ones</object-name>
+  <object-name>tacan-tenths</object-name>
+  <object-name>TAC</object-name>
+  <object-name>VOR</object-name>
+  <object-name>ADF</object-name>
+  <object-name>OFF</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation> 
+
+
+ <!-- ************* Compass Card ***************** -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>face</object-name>
+  <property>orientation/heading-magnetic-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>  
+
+ <!-- ************* TACAN Needle ***************** -->
+
+ <animation>
+  <type>select</type>
+  <object-name>TACANneedle</object-name>
+  <condition>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>0</value>  
+    </equals> 
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>TACANneedle</object-name>
+  <property>orientation/heading-magnetic-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>TACANneedle</object-name>
+  <property>instrumentation/tacan/indicated-bearing-true-deg</property>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>TACANneedle</object-name>
+  <property>environment/magnetic-variation-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+ <!-- ************* VOR Needle ***************** -->
+
+ <animation>
+  <type>select</type>
+  <object-name>VORneedle</object-name>
+  <condition>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>1</value>  
+    </equals> 
+  </condition>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>VORneedle</object-name>
+  <property>orientation/heading-magnetic-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>VORneedle</object-name>
+  <property>instrumentation/nav[0]/radials/actual-deg</property>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+ <!-- ************* ADF Needle ***************** -->
+
+ <animation>
+  <type>select</type>
+  <object-name>ADFneedle</object-name>
+  <condition>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>2</value>  
+    </equals> 
+  </condition>
+ </animation>
+<!--
+ <animation>
+  <type>rotate</type>
+  <object-name>ADFneedle</object-name>
+  <property>orientation/heading-magnetic-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+--> 
+ <animation>
+  <type>rotate</type>
+  <object-name>ADFneedle</object-name>
+  <property>instrumentation/adf/indicated-bearing-deg</property>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+
+ <!-- ********************** TACAN DME ************************* -->
+ <animation>
+  <type>select</type>
+  <object-name>tacan-hundreds</object-name>
+  <object-name>tacan-tens</object-name>
+  <object-name>tacan-ones</object-name>
+  <object-name>tacan-tenths</object-name>
+  <condition>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>0</value>  
+    </equals> 
+  </condition>
+ </animation>
+ <animation>
+    <type>textranslate</type>
+    <object-name>tacan-hundreds</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>0.01</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+ </animation>
+ <animation>
+    <type>textranslate</type>
+    <object-name>tacan-tens</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>0.01</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>tacan-ones</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <scroll>0.01</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>tacan-tenths</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <factor>1</factor>
+    <step>0.1</step>
+    <scroll>0.001</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <!-- ********************** VOR DME ************************* -->
+ <animation>
+  <type>select</type>
+  <object-name>dme-hundreds</object-name>
+  <object-name>dme-tens</object-name>
+  <object-name>dme-ones</object-name>
+  <object-name>dme-tenths</object-name>
+  <condition>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>1</value>  
+    </equals> 
+  </condition>
+ </animation>
+ <animation>
+    <type>textranslate</type>
+    <object-name>dme-hundreds</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>0.01</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+ </animation>
+ <animation>
+    <type>textranslate</type>
+    <object-name>dme-tens</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>0.01</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>dme-ones</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <scroll>0.01</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>dme-tenths</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor>1</factor>
+    <step>0.1</step>
+    <scroll>0.001</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <!-- ************* Mode Display Window ***************** -->
+
+ <animation>
+  <type>select</type>
+  <object-name>TAC</object-name>
+  <condition>
+   <and>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>0</value>  
+    </equals> 
+    <property>instrumentation/tacan/in-range</property>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>VOR</object-name>
+  <condition>
+   <and>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>1</value>  
+    </equals> 
+    <property>instrumentation/nav/in-range</property>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>ADF</object-name>
+  <condition>
+   <and>
+    <equals>
+       <property>instrumentation/rdmi-mode</property>
+       <value>2</value>  
+    </equals> 
+    <property>instrumentation/adf/in-range</property>
+   </and>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>OFF</object-name>
+  <condition>
+   <or>
+     <and>
+      <equals>
+         <property>instrumentation/rdmi-mode</property>
+         <value>0</value>  
+      </equals>
+      <not> 
+         <property>instrumentation/tacan/in-range</property>
+      </not>
+     </and>
+     <and>
+      <equals>
+         <property>instrumentation/rdmi-mode</property>
+         <value>1</value>  
+      </equals>
+      <not> 
+         <property>instrumentation/nav/in-range</property>
+      </not>
+     </and>
+     <and>
+      <equals>
+         <property>instrumentation/rdmi-mode</property>
+         <value>2</value>  
+      </equals>
+      <not> 
+         <property>instrumentation/adf/in-range</property>
+      </not>
+     </and>
+   </or>
+  </condition>
+ </animation>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

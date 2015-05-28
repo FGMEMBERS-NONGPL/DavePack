@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<!-- Airspeed Indicator, by Dave Culp -->
+
+<PropertyList>
+
+ <path>AS.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>Airspeedneedle</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Airspeedneedle</object-name>
+  <property>velocities/airspeed-kt</property>
+  <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>100</ind>
+      <dep>86.0</dep>
+    </entry>
+    <entry>
+      <ind>200</ind>
+      <dep>156.0</dep>
+    </entry>
+    <entry>
+      <ind>300</ind>
+      <dep>220.0</dep>
+    </entry>
+    <entry>
+      <ind>400</ind>
+      <dep>274.0</dep>
+    </entry>
+    <entry>
+      <ind>500</ind>
+      <dep>329.0</dep>
+    </entry>
+    <entry>
+      <ind>550</ind>
+      <dep>355.0</dep>
+    </entry>
+  </interpolation>   
+  <center>
+   <x-m>-0.0196</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

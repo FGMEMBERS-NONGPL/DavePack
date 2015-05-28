@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+
+<!-- TACAN / VOR / ADF nav selector control, by Dave Culp -->
+<!-- 0=TACAN, 1=VOR, 2=ADF  -->
+
+<PropertyList>
+
+ <path>selector.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face-left</object-name>
+  <object-name>face-right</object-name>
+  <object-name>pointer</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>pointer</object-name>
+  <property>instrumentation/rdmi-mode</property>
+  <factor>90</factor>
+  <center>
+   <x-m>-0.0193</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>knob</object-name>
+  <property>instrumentation/rdmi-mode</property>
+  <factor>90</factor>
+  <center>
+   <x-m>-0.0193</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>bar</object-name>
+  <property>instrumentation/rdmi-mode</property>
+  <factor>90</factor>
+  <center>
+   <x-m>-0.024</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+<animation>
+  <type>pick</type>
+  <object-name>face-left</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/rdmi-mode</property>
+      <step>-1</step>
+      <min>0</min>
+      <max>2</max>
+      <wrap>0</wrap>
+     </binding>
+   </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>face-right</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/rdmi-mode</property>
+      <step>1</step>
+      <min>0</min>
+      <max>2</max>
+      <wrap>0</wrap>
+     </binding>
+   </action>
+</animation>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>pilot.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>Helmet</object-name>
+  <object-name>Visor</object-name>
+  <object-name>Mask</object-name>
+  <object-name>CPT-Pilot-Head</object-name>
+  <object-name>Body</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>sim/current-view/view-number</property>
+    <value>0</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>5</min-m>
+  <max-m>150</max-m>
+ </animation>
+
+</PropertyList>

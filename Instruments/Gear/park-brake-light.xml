@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!-- parking brake warning light, by Dave Culp -->
+
+<PropertyList>
+
+ <path>park-brake-light.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>Light</object-name>
+   <condition>
+    <equals>
+     <property>controls/gear/brake-parking</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>material</type>
+  <object-name>Light</object-name>
+   <emission>
+     <red>0.95</red>
+     <green>0.45</green>
+     <blue>0.1</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    <offset>0.1</offset>
+   </emission> 
+ </animation>  
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

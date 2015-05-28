@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<!-- Slip Indicator, by David Culp -->
+<!-- License: CC-BY-AT-SA, created 25 Jan 2011 -->
+
+<PropertyList>
+
+ <path>slip.ac</path>
+
+
+ <animation>
+    <type>rotate</type>
+    <object-name>ball</object-name>
+     <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+     <factor>-5.729</factor>
+    <max-deg>5</max-deg>
+    <min-deg>-5</min-deg>
+    <center>
+     <x-m>-0.02</x-m>
+     <y-m> 0</y-m>
+     <z-m> 0.2</z-m>
+    </center>
+    <axis>
+      <x> 1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <animation> 
+   <object-name>face</object-name>
+   <type>material</type>
+    <emission> 
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+        <red>0.45</red>
+        <green>0.34</green>
+        <blue>0.18</blue>
+      </emission>
+  </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

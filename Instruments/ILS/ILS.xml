@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<!-- ILS, by Dave Culp -->
+
+<PropertyList>
+
+ <path>ils.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>cdi</object-name>
+  <object-name>gsi</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation> 
+
+ <!-- ********  CDI  ************************************** -->
+
+ <animation>
+  <type>select</type>
+  <object-name>cdi</object-name>
+  <condition>
+   <and>
+   <less-than>
+    <property>instrumentation/nav[1]/heading-needle-deflection</property>
+    <value>10.0</value>
+   </less-than>
+   <greater-than>
+    <property>instrumentation/nav[1]/heading-needle-deflection</property>
+    <value>-10.0</value>
+   </greater-than>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+   <type>translate</type>
+   <object-name>cdi</object-name>
+   <property>instrumentation/nav[1]/heading-needle-deflection</property>
+   <factor>0.002</factor>
+   <axis>
+	 <x>0</x>
+	 <y>1</y>
+	 <z>0</z>
+   </axis>
+ </animation>
+
+ <!-- ********  GSI  ************************************** -->
+
+ <animation>
+  <type>select</type>
+  <object-name>gsi</object-name>
+  <condition>
+   <and>
+   <less-than>
+    <property>instrumentation/nav[1]/gs-needle-deflection</property>
+    <value>10.0</value>
+   </less-than>
+   <greater-than>
+    <property>instrumentation/nav[1]/gs-needle-deflection</property>
+    <value>-10.0</value>
+   </greater-than>
+   </and>
+  </condition>
+ </animation>
+ <animation>
+   <type>translate</type>
+   <object-name>gsi</object-name>
+   <property>instrumentation/nav[1]/gs-needle-deflection</property>
+   <factor>0.002</factor>
+   <axis>
+	 <x>0</x>
+	 <y>0</y>
+	 <z>1</z>
+   </axis>
+ </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

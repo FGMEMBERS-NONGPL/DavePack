@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!-- Stores Emergency Jettison button, by Dave Culp -->
+
+<PropertyList>
+
+ <path>jettison.ac</path>
+
+  <!-- Hot Spots -->
+  <animation>
+   <type>pick</type>
+   <object-name>face</object-name>
+   <visible>true</visible>
+   <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+     <command>property-toggle</command>
+     <property>controls/armament/jettison</property>
+    </binding>
+   </action>
+  </animation>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

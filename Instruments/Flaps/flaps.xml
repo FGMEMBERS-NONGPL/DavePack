@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<!-- OV-10 flap position indicator, by Dave Culp -->
+
+<PropertyList>
+
+ <path>flaps.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>needle</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation>  
+
+  <animation>
+  <type>rotate</type>
+  <object-name>needle</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>90</factor>
+  <center>
+   <x-m>-0.02</x-m>
+   <y-m>-0.005</y-m>
+   <z-m>0.008225</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation> 
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

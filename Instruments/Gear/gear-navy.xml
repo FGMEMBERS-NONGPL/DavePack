@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<!-- gear position indicator, by Dave Culp -->
+
+<PropertyList>
+
+ <path>gear-navy.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>NoseGearLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/gear[0]/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>LMainGearLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/gear[1]/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>RMainGearLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/gear[2]/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>hook-light</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/hook/tailhook-pos-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>launchbar-light</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/holdback/holdback-cmd</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>material</type>
+  <object-name>NoseGearLight</object-name>
+  <object-name>LMainGearLight</object-name>
+  <object-name>RMainGearLight</object-name>
+<!--
+  <object-name>hook-light</object-name>
+  <object-name>launchbar-light</object-name>
+-->
+   <emission>
+     <red>0</red>
+     <green>0.4</green>
+     <blue>0</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    <offset>0.1</offset>
+   </emission> 
+ </animation>  
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

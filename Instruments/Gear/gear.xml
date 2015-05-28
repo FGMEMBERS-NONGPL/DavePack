@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<!-- F80 gear position indicator, by Dave Culp -->
+
+<PropertyList>
+
+ <path>gear.ac</path>
+
+ <animation>
+  <type>select</type>
+  <object-name>NoseGearLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/gear[0]/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>LMainGearLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/gear[1]/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>RMainGearLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/gear[2]/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <animation>
+  <type>material</type>
+  <object-name>NoseGearLight</object-name>
+  <object-name>LMainGearLight</object-name>
+  <object-name>RMainGearLight</object-name>
+   <emission>
+     <red>0</red>
+     <green>0.4</green>
+     <blue>0</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    <offset>0.1</offset>
+   </emission> 
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>TailhookLight</object-name>
+   <condition>
+    <equals>
+     <property>gear/tailhook/position-norm</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!-- Mk82 Low-Drag GP Bomb wrapper, by Dave Culp -->
+
+<PropertyList>
+
+ <path>mk82.ac</path>
+
+ <animation>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>2000</max-m>
+ </animation>
+
+</PropertyList>

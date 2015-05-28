@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+<!-- Station Select Panel (7 stations), by Dave Culp -->
+
+<PropertyList>
+
+ <path>weapons-panel.ac</path>
+
+ <!-- Station 1 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw1-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station1/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw1-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station1/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <!-- Station 2 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw2-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station2/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw2-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station2/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <!-- Station 3 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw3-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station3/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw3-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station3/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <!-- Station 4 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw4-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station4/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw4-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station4/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <!-- Station 5 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw5-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station5/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw5-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station5/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <!-- Station 6 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw6-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station6/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw6-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station6/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+ <!-- Station 7 switch -->
+ <animation>
+  <type>select</type>
+  <object-name>sw7-on</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station7/selected</property>
+     <value>1</value>
+    </equals>
+   </condition> 
+ </animation>  
+ <animation>
+  <type>select</type>
+  <object-name>sw7-off</object-name>
+   <condition>
+    <equals>
+     <property>fdm/jsbsim/systems/armament/station7/selected</property>
+     <value>0</value>
+    </equals>
+   </condition> 
+ </animation>  
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

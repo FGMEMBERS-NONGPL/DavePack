@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!-- M64 500 lb. Bomb wrapper, by Dave Culp -->
+
+<PropertyList>
+
+ <path>m64.ac</path>
+
+ <animation>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>2000</max-m>
+ </animation>
+
+
+</PropertyList>

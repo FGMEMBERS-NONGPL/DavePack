@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!-- Mk81 Low-Drag GP Bomb wrapper, by Dave Culp -->
+
+<PropertyList>
+
+ <path>mk81.ac</path>
+
+ <animation>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+
+
+ <animation>
+  <type>select</type>
+  <object-name>bomb</object-name>
+  <object-name>fuse</object-name>
+  <condition>
+   <not>
+     <property>fdm/jsbsim/systems/armament/bomb5/released</property>
+   </not>
+  </condition>
+ </animation>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>2000</max-m>
+ </animation>
+
+</PropertyList>

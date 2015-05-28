@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!-- angle-of-attack indexer lights (Air Force style), by Dave Culp -->
+
+<PropertyList>
+
+ <path>indexer-af.ac</path>
+
+<!--
+ <animation>
+  <type>material</type>
+  <object-name>light-slow</object-name>
+  <object-name>light-on-speed</object-name>
+  <object-name>light-fast</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation> 
+-->
+
+ <animation>
+  <type>select</type>
+  <object-name>light-slow</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>gear/gear[0]/position-norm</property>
+     <value>1</value>
+    </equals>
+    <greater-than>
+     <property>fdm/jsbsim/aero/alpha-deg</property>
+     <value>7.8</value>
+    </greater-than>
+   </and>
+  </condition>
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>light-fast</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>gear/gear[0]/position-norm</property>
+     <value>1</value>
+    </equals>
+    <less-than>
+     <property>fdm/jsbsim/aero/alpha-deg</property>
+     <value>6.2</value>
+    </less-than>
+   </and>
+  </condition>
+ </animation>  
+
+ <animation>
+  <type>select</type>
+  <object-name>light-on-speed</object-name>
+  <condition>
+   <and>
+    <equals>
+     <property>gear/gear[0]/position-norm</property>
+     <value>1</value>
+    </equals>
+    <greater-than>
+     <property>fdm/jsbsim/aero/alpha-deg</property>
+     <value>5.8</value>
+    </greater-than>
+    <less-than>
+     <property>fdm/jsbsim/aero/alpha-deg</property>
+     <value>8.2</value>
+    </less-than>
+   </and>
+  </condition>
+ </animation>  
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

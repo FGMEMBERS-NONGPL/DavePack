@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<!-- Altimeter, by Dave Culp -->
+
+<PropertyList>
+
+ <path>Altimeter.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Altimeter100needle</object-name>
+  <object-name>Altimeter1000needle</object-name>
+  <object-name>Altimeter10000needle</object-name>
+  <object-name>face</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation>  
+
+  <animation>
+  <type>rotate</type>
+  <object-name>Altimeter100needle</object-name>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
+  <factor>0.36</factor>
+  <center>
+   <x-m>-0.02</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>  
+
+  <animation>
+  <type>rotate</type>
+  <object-name>Altimeter1000needle</object-name>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
+  <factor>0.036</factor>
+  <center>
+   <x-m>-0.19</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>  
+
+  <animation>
+  <type>rotate</type>
+  <object-name>Altimeter10000needle</object-name>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
+  <factor>0.0036</factor>
+  <center>
+   <x-m>-0.185</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>  
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

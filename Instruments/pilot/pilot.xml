@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!-- pilot (USAF) -->
+
+<PropertyList>
+
+ <path>pilot-usaf.ac</path>
+
+ <!-- Suppress Pilot Model in Cockpit View -->
+ <animation>
+  <type>select</type>
+  <object-name>Pilot</object-name>
+  <condition>
+   <not>
+   <equals>
+    <property>/sim/current-view/view-number</property>
+    <value>0</value>
+   </equals>
+   </not>
+  </condition>
+ </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>5</min-m>
+  <max-m>150</max-m>
+ </animation>
+
+</PropertyList>

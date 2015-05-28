@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>seat.ac</path>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>5</min-m>
+  <max-m>150</max-m>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+
+<!-- OV-10 weapon station fire/off/drop switches, by Julien Pierru -->
+
+<PropertyList>
+
+ <path>seat.ac</path>
+
+ <!--animation>
+  <type>select</type>
+  <object-name>CPT-Pilot-Head</object-name>
+  <object-name>CPT-Pilot-Body</object-name>
+  <object-name>CPT-Helmet</object-name>
+  <object-name>CPT-Face-Mask</object-name>
+  <object-name>CPT-Visor</object-name>
+ </animation-->
+
+ <!--animation>
+  <type>material</type>
+  <object-name>switchbox</object-name>
+   <emission>
+     <red>0.6</red>
+     <green>0.3</green>
+     <blue>0.3</blue>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+   </emission> 
+ </animation-->
+
+ <!--animation> 
+   <type>select</type>
+    <object-name>fire1</object-name>
+    <condition>
+     <property>controls/armament/fire1</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>off1</object-name>
+    <condition>
+     <property>controls/armament/off1</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>drop1</object-name>
+    <condition>
+     <property>controls/armament/drop1</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>fire2</object-name>
+    <condition>
+     <property>controls/armament/fire2</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>off2</object-name>
+    <condition>
+     <property>controls/armament/off2</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>drop2</object-name>
+    <condition>
+     <property>controls/armament/drop2</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>fire3</object-name>
+    <condition>
+     <property>controls/armament/fire3</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>off3</object-name>
+    <condition>
+     <property>controls/armament/off3</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>drop3</object-name>
+    <condition>
+     <property>controls/armament/drop3</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>fire4</object-name>
+    <condition>
+     <property>controls/armament/fire4</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>off4</object-name>
+    <condition>
+     <property>controls/armament/off4</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>drop4</object-name>
+    <condition>
+     <property>controls/armament/drop4</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>fire5</object-name>
+    <condition>
+     <property>controls/armament/fire5</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>off5</object-name>
+    <condition>
+     <property>controls/armament/off5</property>
+    </condition>
+ </animation>
+
+ <animation> 
+   <type>select</type>
+    <object-name>drop5</object-name>
+    <condition>
+     <property>controls/armament/drop5</property>
+    </condition>
+ </animation-->
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>5</min-m>
+  <max-m>150</max-m>
+ </animation>
+
+</PropertyList>

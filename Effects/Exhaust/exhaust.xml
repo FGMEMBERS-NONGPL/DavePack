@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>exhaust.ac</path>
+
+ <animation>
+  <type>noshadow</type>
+  <object-name>Exhaust1</object-name>
+ </animation>
+
+ <animation>
+  <type>shader</type>
+  <shader>heat-haze</shader>
+  <object-name>Exhaust1</object-name>
+  <factor>0.12</factor>
+  <speed-prop>/engines/engine[0]/n1</speed-prop>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>Exhaust1</object-name>
+  <condition>
+   <property>/engines/engine[0]/running</property>
+  </condition>
+ </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>120</max-m>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!-- LAU-10D Rocket Launcher wrapper, by Dave Culp -->
+
+<PropertyList>
+
+ <path>LAU-10D.ac</path>
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>4000</max-m>
+ </animation>
+
+</PropertyList>

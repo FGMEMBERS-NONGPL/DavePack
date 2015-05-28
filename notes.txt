@@ -1,0 +1,9 @@
+DavePack is a directory containing standard instruments and effects that I like to add to my aircraft models.  They are released under a "Freeware, Non-Commercial" license.  The Braking 'Chute and "Heat Haze" effect were made by someone else (I think either A.J. Macleod or Vivian Meazza) and are available elsewhere under the GPL.
+
+DavePack formerly had a GPL license, but I've since added some sound files, and others, that are non-commercial, so I've re-licensed DavePack for this reason. 
+
+License:  Creative Commons, CC-BY-NC-SA
+
+
+Dave Culp
+davidculp@cox.net 
