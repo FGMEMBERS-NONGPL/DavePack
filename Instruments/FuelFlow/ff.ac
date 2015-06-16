@@ -59,7 +59,7 @@ kids 0
 OBJECT poly
 name "face"
 loc -0.00699542 -4.34633e-10 6.51949e-10
-texture "/home/dave/fgdata/Aircraft/DavePack/Instruments/EGT/egt_001.png"
+texture "Aircraft/DavePack/Instruments/EGT/egt_001.png"
 crease 45.000000
 numvert 25
 0.00945559 -6.51949e-10 -4.34633e-09
