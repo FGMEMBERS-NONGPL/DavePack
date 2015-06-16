@@ -1,8 +1,9 @@
 DavePack
 ---------
 
-Obtained from FGUK Hangar (version 08-01-2014)
-http://fguk.eu/index.php/hangar/viewdownload/11-other-objects-and-vehicles/170-davepackupdate
+Obtained from Dave Culp Hangar, Version 5.4:: Updated June 9 2015
+
+https://dl.dropboxusercontent.com/u/12562954/hangar/hangar.html
 
 ***
 
